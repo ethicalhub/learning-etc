@@ -12,9 +12,9 @@ export default {
     </>
   ),
   logo: (
-    <div className="font-bold text-primary flex items-center gap-2">
+    <div className="font-bold text-primary flex text-sm sm:text-base md:text-lg items-center gap-3">
       <Logo />
-      <span>Notes</span>
+      <span> Learning Notes</span>
     </div>
   ),
   project: {
