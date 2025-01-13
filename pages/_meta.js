@@ -2,6 +2,7 @@
 export default {
   contact: { title: "Contact Us", type: "page" },
   docs: "Documentation",
+  react: "React-etc",
   portfolio: {
     title: "My Portfolio",
     type: "page",

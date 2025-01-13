@@ -25,3 +25,10 @@ body {
   --light-bg-color: #f7eeed;
   --error-color: #ef233c;
 }
+nav {
+  padding-top: 2.75rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+@layer utilities {
+}
