@@ -25,10 +25,18 @@ body {
   --light-bg-color: #f7eeed;
   --error-color: #ef233c;
 }
-nav {
-  padding-top: 2.75rem !important;
+/* nav {
+  padding-top: 2.5rem !important;
   padding-bottom: 2.5rem !important;
 }
+
+.nextra-sidebar-container {
+  margin-top: 1rem !important;
+}
+
+._bg-transparent {
+  background: #fff;
+} */
 
 @layer utilities {
 }

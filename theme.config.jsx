@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Logo from "./components/Logo";
 
 export default {
@@ -11,8 +12,9 @@ export default {
     </>
   ),
   logo: (
-    <div className="my-2">
+    <div className="font-bold text-primary flex items-center gap-2">
       <Logo />
+      <span>Notes</span>
     </div>
   ),
   project: {

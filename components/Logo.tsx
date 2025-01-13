@@ -12,9 +12,9 @@ const Logo = () => {
         alt={alt}
         width={width}
         height={height}
-        className="size-[45px]"
+        className="size-[32px]"
       />
-      <span className="text-sm font-bold text-primary">yasir-etc</span>
+      {/* <span className="text-sm font-bold text-primary">yasir-etc</span> */}
     </div>
   );
 };
