@@ -1,0 +1,56 @@
+# DSA Roadmap
+
+Here is my roadmap of revision notes for DSA to focus on foundational topics and practice them effectively.
+
+## 1. Basics
+
+- **Big O Notation**
+- **Time Complexity**
+- **Space Complexity**
+
+## 2. Time & Space Complexities
+
+- **Constant**: `O(1)`
+- **Linear**: `O(n)`
+- **Quadratic**: `O(n^2)`
+- **Logarithmic**: `O(log n)`
+
+## 3. Methods Complexity
+### Arrays
+
+- **push/pop**: `O(1)`
+- **shift/unshift**: `O(n)`
+- **sort**: `O(n log n)`
+- **map/reduce**: `O(n)`
+
+### Objects
+
+- **Access/Delete**: `O(1)`
+- **keys/values**: `O(n)`
+
+## 4. Arrays and Hash Tables
+
+### Arrays
+
+- **Concept**: Arrays are ordered collections of elements accessible via indices.
+- **Common Methods**:
+  - **push/pop**: `O(1)` - Add or remove elements from the end of the array.
+  - **shift/unshift**: `O(n)` - Add or remove elements from the beginning (requires shifting indices).
+  - **slice/splice**: `O(n)` - Extract or modify portions of an array.
+  - **concat**: `O(n)` - Merge two or more arrays.
+  - **indexOf/lastIndexOf**: `O(n)` - Find the position of an element.
+  - **includes**: `O(n)` - Check if an element exists.
+  - **forEach/map/filter**: `O(n)` - Iterate and manipulate elements.
+  - **sort**: `O(n log n)` - Sort elements in the array.
+
+### Hash Tables
+
+- **Concept**: Hash tables store key-value pairs, using a hash function to compute indices for faster access.
+- **Common Methods**:
+  - **Insert/Update**: `O(1)` (on average) - Add or modify key-value pairs.
+  - **Delete**: `O(1)` (on average) - Remove key-value pairs.
+  - **Search**: `O(1)` (on average) - Retrieve a value using its key.
+- **Use Cases**:
+  - Implementing caches (e.g., LRU cache).
+  - Counting frequencies (e.g., counting word occurrences).
+  - Ensuring uniqueness (e.g., removing duplicates).

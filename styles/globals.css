@@ -55,5 +55,12 @@ body {
   color: var(--secondary-color);
   font-weight: 600;
 }
+
+.nextra-toc p {
+  box-shadow: none !important;
+}
+.nextra-toc-footer {
+  box-shadow: none !important;
+}
 @layer utilities {
 }
