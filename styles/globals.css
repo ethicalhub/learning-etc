@@ -38,5 +38,22 @@ body {
   background: #fff;
 } */
 
+.nextra-sidebar-footer {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+._bg-primary-100 {
+  background: var(--primary-color);
+}
+
+.hover\:_bg-gray-100:hover {
+  background: transparent !important;
+}
+
+._text-primary-800 {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
 @layer utilities {
 }

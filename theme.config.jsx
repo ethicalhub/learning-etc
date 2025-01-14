@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Logo from "./components/Logo";
-
 export default {
   head: (
     <>
@@ -23,6 +21,11 @@ export default {
   chat: {
     link: "https://github.com/ethicalhub/learning-etc",
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
+  darkMode: false,
+
   docsRepositoryBase: "https://github.com/ethicalhub/learning-etc",
   footer: "null",
 };
