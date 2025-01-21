@@ -28,3 +28,59 @@ const twoPointerMethod = (array, target) => {
 
 twoPointerMethod(arrayMain, target);
 ```
+
+## Slow and Fast Pointer (Tortoise and Hare algorithm)
+
+Given head, the head of a linked list, determine if the linked list has a cycle in it.
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer.
+Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter.
+Return true if there is a cycle in the linked list. Otherwise, return false.
+
+- The slow pointer moves one step at a time.
+- The fast pointer moves two steps at a time.
+
+```javascript copy
+// Slow and Fast pointer method in JavaScript
+
+case1: [3, 2, 0, -4];
+case2: [1, 2];
+case3: [1];
+
+var hasCycle = function (head) {
+  let slow = head;
+  let fast = head;
+
+  while (fast !== null && fast.next !== null) {
+    slow = slow.next;
+    fast = fast.next.next;
+
+    if (slow === fast) {
+      return true;
+    }
+  }
+  return false;
+};
+```
+
+
+
+## Reverseing an Array
+
+
+```javascript copy
+const array1 = [3, 4, 5, 6, 1, 5];
+
+const reverseArray = (arr) => {
+  let temp;
+  for (let i = 0, j = arr.length - 1; i <= j; i++, j--) {
+    temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  return arr;
+};
+
+reverseArray(array1);
+
+// expected result = [5,1,6,5,4,3]
+```
