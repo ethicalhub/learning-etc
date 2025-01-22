@@ -10,6 +10,7 @@ export default {
   javascript: "Javascript",
   typescript: "Typescript",
   dsa: "Data Structure & Algorithms",
+  ibm: "IBM Notes",
 
   "-": {
     type: "separator",
