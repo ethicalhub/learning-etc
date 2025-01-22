@@ -1,57 +1,190 @@
-# DSA Roadmap
+# 40-Day DSA Roadmap for JavaScript
 
-Here is my roadmap of revision notes for DSA to focus on foundational topics and practice them effectively.
+Here's the roadmap for the DSA journey I'm following as my revision plan to strengthen problem-solving skills and prepare effectively for frontend interviews.
 
-## 1. Basics
+- Start Date: Jan 21, 2025
 
-- **Big O Notation**
-- **Time Complexity**
-- **Space Complexity**
+## Phase 1: Fundamentals (Days 1–8)
 
-## 2. Time & Space Complexities
+### Day 1–2: Big O Notation
 
-- **Constant**: `O(1)`
-- **Linear**: `O(n)`
-- **Quadratic**: `O(n^2)`
-- **Logarithmic**: `O(log n)`
+- Understanding time and space complexity.
+- Best, average, and worst-case scenarios.
+- Common complexities: O(1), O(n), O(log n), O(n²), etc.
+- Practice analyzing simple loops and nested loops.
 
-## 3. Methods Complexity
+### Day 3–4: Arrays
 
-### Arrays
+- Basics: Declaration, iteration, common methods (`map`, `filter`, `reduce`).
+- **Practice Problems:**
+  - Two Sum
+  - Maximum Product Subarray
+  - Rotate Array
 
-- **push/pop**: `O(1)`
-- **shift/unshift**: `O(n)`
-- **sort**: `O(n log n)`
-- **map/reduce**: `O(n)`
+### Day 5: Strings
 
-### Objects
+- Manipulation: Substring, split, reverse, and palindrome check.
+- **Common Algorithms:**
+  - Anagram checks
+  - Longest substring without repeating characters
+  - Count vowels/consonants
 
-- **Access/Delete**: `O(1)`
-- **keys/values**: `O(n)`
+### Day 6: Linear and Binary Search
 
-## 4. Arrays and Hash Tables
+- **Linear Search:** Implementation, best and worst cases.
+- **Binary Search:**
+  - Iterative and recursive implementations.
+  - **Practice Problems:**
+    - Search in a rotated sorted array
+    - First and last position of an element in a sorted array
 
-### Arrays
+### Day 7–8: Sorting Algorithms
 
-- **Concept**: Arrays are ordered collections of elements accessible via indices.
-- **Common Methods**:
-  - **push/pop**: `O(1)` - Add or remove elements from the end of the array.
-  - **shift/unshift**: `O(n)` - Add or remove elements from the beginning (requires shifting indices).
-  - **slice/splice**: `O(n)` - Extract or modify portions of an array.
-  - **concat**: `O(n)` - Merge two or more arrays.
-  - **indexOf/lastIndexOf**: `O(n)` - Find the position of an element.
-  - **includes**: `O(n)` - Check if an element exists.
-  - **forEach/map/filter**: `O(n)` - Iterate and manipulate elements.
-  - **sort**: `O(n log n)` - Sort elements in the array.
+- **Day 7:** Bubble sort, Selection sort, Insertion sort.
+- **Day 8:** Merge sort, Quick sort.
+- **Practice:** Sorting arrays with duplicates and custom comparator functions.
 
-### Hash Tables
+---
 
-- **Concept**: Hash tables store key-value pairs, using a hash function to compute indices for faster access.
-- **Common Methods**:
-  - **Insert/Update**: `O(1)` (on average) - Add or modify key-value pairs.
-  - **Delete**: `O(1)` (on average) - Remove key-value pairs.
-  - **Search**: `O(1)` (on average) - Retrieve a value using its key.
-- **Use Cases**:
-  - Implementing caches (e.g., LRU cache).
-  - Counting frequencies (e.g., counting word occurrences).
-  - Ensuring uniqueness (e.g., removing duplicates).
+## Phase 2: Intermediate Concepts (Days 9–20)
+
+### Day 9–10: Sliding Window Technique
+
+- Basics: When and why to use it.
+- **Practice Problems:**
+  - Maximum sum of k consecutive elements
+  - Longest substring with at most k distinct characters
+
+### Day 11–12: Kadane's Algorithm
+
+- Maximum sum subarray problem.
+- **Variations:**
+  - Maximum product subarray
+  - Circular subarrays
+
+### Day 13–14: Stack
+
+- Implementation using arrays.
+- **Applications:**
+  - Valid parenthesis
+  - Largest rectangle in histogram
+  - Next greater element
+
+### Day 15–16: Queue
+
+- **Day 15:** Basics and circular queues.
+- **Day 16:** Applications:
+  - Sliding window maximum
+  - First non-repeating character in a stream
+
+### Day 17–18: Linked List
+
+- **Day 17:** Singly linked list (insert, delete, reverse).
+- **Day 18:** Doubly linked list and cycle detection.
+- **Practice Problems:**
+  - Detect a cycle (Floyd’s algorithm)
+  - Merge two sorted linked lists
+
+### Day 19–20: Hash Tables and Sets
+
+- **Day 19:** Hash Tables:
+  - Implementation in JavaScript.
+  - **Practice Problems:**
+    - Subarray sum equals k
+    - Longest consecutive sequence
+- **Day 20:** Sets:
+  - Intersection, union, and difference operations
+
+---
+
+## Phase 3: Advanced Data Structures (Days 21–30)
+
+### Day 21–22: Trees
+
+- Basics: Binary tree, Binary Search Tree.
+- **Practice Problems:**
+  - Check if a tree is balanced
+  - Lowest common ancestor in BST
+
+### Day 23–24: Tree Traversal
+
+- In-order, Pre-order, Post-order (recursive and iterative).
+- **Practice:**
+  - Serialize and deserialize a binary tree
+  - Zigzag level-order traversal
+
+### Day 25–26: Graphs
+
+- Representation (adjacency list/matrix).
+- BFS and DFS implementations.
+- **Practice Problems:**
+  - Number of islands
+  - Shortest path in an unweighted graph
+
+### Day 27–28: Tries
+
+- Basics: Insert, search, and delete operations.
+- **Practice:**
+  - Implement autocomplete
+  - Longest prefix matching
+
+### Day 29–30: Dynamic Programming (Basics)
+
+- Principles: Overlapping subproblems and optimal substructure.
+- **Practice Problems:**
+  - Fibonacci series (top-down and bottom-up)
+  - Climbing stairs
+
+---
+
+## Phase 4: Problem Solving Focus (Days 31–37)
+
+### Day 31–33: Classic Problems
+
+- Solve problems from mixed topics:
+  - Subsets and combinations
+  - N-Queens problem
+  - Word search in a matrix
+
+### Day 34–35: Advanced Dynamic Programming
+
+- **Practice Problems:**
+  - Longest Increasing Subsequence
+  - Knapsack problem
+  - Minimum path sum in a grid
+
+### Day 36: Graph Algorithms
+
+- Dijkstra’s algorithm
+- Topological sorting
+
+### Day 37: Mock Interviews
+
+- Solve problems under time constraints.
+
+---
+
+## Phase 5: Revision and Miscellaneous (Days 38–40)
+
+### Day 38: Practice Important Algorithms
+
+- Backtracking (Sudoku solver, permutations)
+- Sliding window and two-pointer problems
+
+### Day 39: System Design Concepts
+
+- Basics of API design, caching, and load balancing
+
+### Day 40: Mock Interviews and Review
+
+- Focus on weak areas and simulate real interview settings.
+
+---
+
+## Additional Topics
+
+- **Heap (Min and Max):** Priority queue, merge k sorted arrays.
+- **Segment Trees:** Range queries (sum, min, max).
+- **Greedy Algorithms:** Activity selection, interval scheduling.
+
+---
