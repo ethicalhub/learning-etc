@@ -8,7 +8,7 @@
 # Key Concepts of Strings
 
 Definition: A string is an array of characters stored in a specific order.
-Immutability: In many programming languages, strings are immutable (e.g., in Java and Python). 
+Immutability: In many programming languages, strings are immutable (e.g., in Java and Python).
 
 Modifications create a new string instead of altering the original.
 Common Operations:
@@ -17,4 +17,51 @@ Access by Index: string[i]
 Concatenation: + operator or concat() methodsg
 Substrings: string[start:end]
 Reversal: Using loops or built-in functions
-Comparison: ==, compareTo() in Java, or localeCompare() in JavaScript
+Comparison: ==, compareTo() in Java, or localeCompare() in JavaScript 
+
+-----------------------------------------------------------------------------------
+
+# Integer Revision Notes in JavaScript
+
+## **What is an Integer in JavaScript?**
+- An **integer** is a whole number (positive, negative, or zero) without any fractional or decimal part.
+- JavaScript represents all numbers (including integers and floating-point numbers) using the **Number** type, which is based on the IEEE 754 standard for double-precision floating-point arithmetic.
+
+---
+
+## **Characteristics of Integers in JavaScript**
+1. **Range**: 
+   - Safe integers are integers that can be accurately represented without rounding errors.
+   - Range: `Number.MIN_SAFE_INTEGER` (-9007199254740991) to `Number.MAX_SAFE_INTEGER` (9007199254740991).
+   - Use `Number.isSafeInteger()` to check if a number is within this range.
+
+2. **Precision**:
+   - JavaScript handles integers up to 15 significant digits accurately.
+   - Beyond this, the precision may be lost due to floating-point limitations.
+
+3. **Dynamic Typing**:
+   - JavaScript does not differentiate between integers and floating-point numbers in its type system.
+   - `typeof 42` and `typeof 42.0` both return `"number"`.
+
+---
+
+## **Basic Operations on Integers**
+- **Arithmetic**:
+  - Includes addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), modulus (`%`), and exponentiation (`**`).
+- **Comparison**:
+  - Relational operators (`<`, `>`, `<=`, `>=`, `===`, `!==`) can be used to compare integers.
+- **Bitwise Operations**:
+  - Logical operations at the binary level, such as AND (`&`), OR (`|`), XOR (`^`), and shifts (`<<`, `>>`).
+
+---
+
+## **Working with Integers in JavaScript**
+
+### **Declaration and Identification**
+- JavaScript automatically interprets integers when declared:
+  ```javascript
+  const num = 42; // Integer
+
+  Number.isInteger(value)
+  Math.floor(), Math.ceil(), or Math.trunc()
+  Number.isNaN(parseInt("abc")); // true
