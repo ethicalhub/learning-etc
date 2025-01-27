@@ -17,25 +17,29 @@ Access by Index: string[i]
 Concatenation: + operator or concat() methodsg
 Substrings: string[start:end]
 Reversal: Using loops or built-in functions
-Comparison: ==, compareTo() in Java, or localeCompare() in JavaScript 
+Comparison: ==, compareTo() in Java, or localeCompare() in JavaScript
 
------------------------------------------------------------------------------------
+---
 
 # Integer Revision Notes in JavaScript
 
 ## **What is an Integer in JavaScript?**
+
 - An **integer** is a whole number (positive, negative, or zero) without any fractional or decimal part.
 - JavaScript represents all numbers (including integers and floating-point numbers) using the **Number** type, which is based on the IEEE 754 standard for double-precision floating-point arithmetic.
 
 ---
 
 ## **Characteristics of Integers in JavaScript**
-1. **Range**: 
+
+1. **Range**:
+
    - Safe integers are integers that can be accurately represented without rounding errors.
    - Range: `Number.MIN_SAFE_INTEGER` (-9007199254740991) to `Number.MAX_SAFE_INTEGER` (9007199254740991).
    - Use `Number.isSafeInteger()` to check if a number is within this range.
 
 2. **Precision**:
+
    - JavaScript handles integers up to 15 significant digits accurately.
    - Beyond this, the precision may be lost due to floating-point limitations.
 
@@ -46,6 +50,7 @@ Comparison: ==, compareTo() in Java, or localeCompare() in JavaScript
 ---
 
 ## **Basic Operations on Integers**
+
 - **Arithmetic**:
   - Includes addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), modulus (`%`), and exponentiation (`**`).
 - **Comparison**:
@@ -58,10 +63,29 @@ Comparison: ==, compareTo() in Java, or localeCompare() in JavaScript
 ## **Working with Integers in JavaScript**
 
 ### **Declaration and Identification**
+
 - JavaScript automatically interprets integers when declared:
+
   ```javascript
   const num = 42; // Integer
 
   Number.isInteger(value)
   Math.floor(), Math.ceil(), or Math.trunc()
   Number.isNaN(parseInt("abc")); // true
+  ```
+
+---
+
+## Booleans
+
+---
+
+## Array
+
+- Arrays can be created statically or dynamically. In a static language, the array would be kept on the stack and require that the array type be specified a priori. Dynamic languages offer more fluidity, sometimes calling for the size to be set and do not require the type to be specified before use. Such an instance would be stored on a heap. Arrays have indexes, which is a contiguous value starting at 0 and increasing until the end of the array. When an item is required, the array's name followed by square brackets and the index location are given.
+
+- An item can be stored in heap or stack memory. Stack memory is created when running a function. It is created for that function and discarded after the execution. Items in this memory allocation are only available for that function. In contrast, heap memory is created during the execution of instructions and is available to all.
+
+- Two memory-related concepts you may encounter are shallow copy and deep copy. The first instance does not make a copy of the array but returns an index location. A deep copy will create a new instance of an array. Making a shallow copy optimizes memory usage; however, you must ensure that no unexpected changes are inadvertently made to an array shared by two variables.
+
+https://www.cs.fsu.edu/~myers/c++/notes/arrays.html
