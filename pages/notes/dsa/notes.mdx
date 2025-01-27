@@ -1,0 +1,20 @@
+## Strings
+
+- Immutability refers to the idea that once an object is created, it cannot be changed. This concept is often applied to strings, and it helps with memory efficiency and performance.
+- String Pool: Languages like Java or Python use a "string pool" (or "string internment"). This is essentially a collection of all unique string values that have been used in a program. The idea is that if two variables hold the same string, they don’t need to occupy separate spots in memory—they can both point to the same location in the string pool.
+- Reuse Memory: When a string is immutable, the value of the string cannot change. So, if you try to change the string (e.g., adding "s" to the end of "string" to make it "strings"), instead of altering the original string, a new string instance is created, and it’s added to the string pool. The variable then points to this new string.
+- No Memory Waste: By reusing strings in the string pool, the language minimizes memory usage. Instead of creating a new string in memory each time, it can reuse an existing one from the pool. If the same string "apple" appears multiple times, it only takes up memory once, no matter how many times it's used in the program.
+
+# Key Concepts of Strings
+
+Definition: A string is an array of characters stored in a specific order.
+Immutability: In many programming languages, strings are immutable (e.g., in Java and Python). 
+
+Modifications create a new string instead of altering the original.
+Common Operations:
+Length: len(string) or string.length
+Access by Index: string[i]
+Concatenation: + operator or concat() methodsg
+Substrings: string[start:end]
+Reversal: Using loops or built-in functions
+Comparison: ==, compareTo() in Java, or localeCompare() in JavaScript
